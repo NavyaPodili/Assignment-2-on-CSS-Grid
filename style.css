@@ -1,0 +1,46 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(225); 
+  }
+  
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto); 
+    gap: 10px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 800px;
+    background-color: aliceblue;
+    box-shadow: rgba(0,0,0,0.16) 0px 10px 36px 0px, rgba(0,0,0,0.06) 0px 0px 0px 1px;
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease; 
+  }
+  
+  .image-gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .image-gallery img:hover {
+    filter: grayscale(20%); 
+  }
+  
+  .image-gallery img {
+    transition: box-shadow 0.3s ease; 
+  }
+  
+  .image-gallery img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  }
+  
